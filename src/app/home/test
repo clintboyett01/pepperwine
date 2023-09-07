@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RV Park Near Jacksonville, TX - Great Location and Amenities">
+  <title>RV Park Near Jacksonville, TX | Pepperwine RV Park</title>
+</head>
+<body>
+
+
+<header class="grey w3-padding-16">
+  <div class="w3-center">
+    <img src="assets/sign.png" style="object-fit:cover;width:100%;vertical-align:middle;" alt="RV Park Sign">
+  </div>
+  <br>
+  <h1 class="w3-wide w3-text-white bannerText w3-center"><b>RV Park Near Jacksonville, TX - Great Location and Amenities</b></h1>
+  <br>
+</header>
+
+
+
+
+<section class="w3-row w3-padding-64">
+  <div class="w3-col s12 l6 m6 w3-padding w3-center">
+    <img src="assets/CameraPond1.jpg" width="90%" alt="Pond Image">
+  </div>
+
+
+
+
+
+
+
+
+
+  <article class="w3-col w3-container w3-padding s12 l6 m6">
+    <p class="otherText w3-center">
+      Pepperwine is a beautiful 54 acre RV park located off highway 69 outside of Jacksonville Texas.
+      We offer 4 scenic hiking trails, an impressive 5 acre catch-and-release fishing lake, and easy
+
+      access to highway 69. Our amenities include concrete RV pads, a patio with picnic tables, full hookups, sewage, and trash pickup.
+      Pepperwine RV Park is proud to offer all this to ensure our customers have the perfect RV experience.
+    </p>
+  </article>
+</section>

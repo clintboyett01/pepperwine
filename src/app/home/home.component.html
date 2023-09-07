@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="Experience the best RV park near Jacksonville, Texas - Pepperwine RV Park offers scenic hiking trails, fishing lake, and more. Explore our amenities and rates.">
+  <meta name="keywords" content="RV Parks, Jacksonville Texas, RV Park Jacksonville TX, Pepperwine RV Park, Home">
+  <meta name="author" content="Clint Boyett">
+  <title>Pepperwine RV Park Home- Best RV Park near Jacksonville, Texas</title>
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar grey w3-card">
+    <button class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+            (click)="toggleMobileMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars w3-text-white"></i>
+    </button>
+    <a href="/home" class="w3-bar-item headerText  w3-text-white w3-button w3-padding-large w3-hide-small">HOME</a>
+    <a href="/amenities"
+       class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">AMENITIES</a>
+    <a href="/gallery" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">GALLERY</a>
+    <a href="/rates" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">RATES</a>
+    <a href="/map" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">MAP &
+      DIRECTIONS</a>
+    <a href="/contact" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">CONTACT</a>
+  </div>
+</div>
+
+<div *ngIf="hideMobileMenu" id="navDemo" class="w3-bar-block grey w3-hide-large w3-hide-medium w3-top"
+     style="margin-top:46px">
+  <a href="/home" class="w3-bar-item w3-button headerText  w3-text-white w3-button w3-padding-large">HOME</a>
+  <a href="/amenities" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">AMENITIES</a>
+  <a href="/gallery" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">GALLERY</a>
+  <a href="/rates" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">RATES</a>
+  <a href="/map" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">MAP & DIRECTIONS</a>
+  <a href="/contact" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">CONTACT</a>
+</div>
+
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Image -->
+  <div class="grey">
+    <div class="   w3-center">
+      <img src="assets/sign.png" style="object-fit:cover;width:100%;  vertical-align: middle;
+">
+
+
+    </div>
+    <br>
+    <h3 class="w3-wide w3-text-white bannerText w3-center"><b>RV Park Near Jacksonville, TX - Great Location and
+      Amenities</b></h3>
+    <br>
+  </div>
+
+
+  <div class="w3-row   w3-padding-64" >
+
+    <div class="w3-col s12 l6 m6  w3-padding  w3-center ">
+<!--this is an image of a pond-->
+    <img src="assets/CameraPond1.jpg" width="90%">
+    </div>
+
+    <div class="w3-col w3-container w3-padding s12 l6 m6 ">
+    <p class="otherText w3-center w3-hide-large"  style="width: 100%;height: 100%;">
+      Pepperwine is a beautiful 54 acre RV park located off highway 69 outside of Jacksonville Texas.
+      We offer 4 scenic hiking trails, an impressive 5 acre catch-and-release fishing lake, and easy
+      access to highway 69. Our amenities include nine 75x12’ concrete RV pads, four 60x12' concrete
+      RV pads, 10x10’ concrete patio with picnic tables, full 30/50 amp hookups, sewage, and trash pickup.
+      Pepperwine RV Park is proud to offer all this to ensure our customers have the perfect RV experience."
+    </p>
+      <div class="w3-container w3-hide-small w3-hide-medium">
+        <p class="otherText w3-center   w3-hide-medium"  style="width: 90%;height: 100%;font-size: 30px;">
+          Pepperwine is a beautiful 54 acre RV park located off highway 69
+          outside of Jacksonville Texas. We offer 4 scenic hiking trails, an
+          impressive 5 acre catch-and-release fishing lake, and easy access
+          to highway 69. Our amenities include nine 75x12’ concrete RV pads,
+          four 60x12' concrete RV pads, 10x10’ concrete patio with picnic
+          tables, full 30/50 amp hookups, sewage, and trash pickup. Pepperwine
+          RV Park is proud to offer all this to ensure our customers have the
+          perfect RV experience."
+        </p>
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+  <div class="grey w3-padding-16 "></div>
+
+  <div class="grey   w3-display-container " style="width: 100%;min-height: 550px">
+<!--    this is a video of pepperwine rv park-->
+    <iframe class="  w3-display-middle"  src="https://www.youtube.com/embed/Zlbm6FbYXlM?autoplay=1&mute=1" frameborder="0" allowfullscreen width="100%" height="540"></iframe>
+  </div>
+
+
+
+  <div class="grey w3-padding-16 "></div>
+
+  <div class="w3-row-padding w3-padding-16  w3-center" id="food">
+
+    <div class="w3-col l4  m4 s12" >
+      <a href="\amenities">
+        <img src="/assets/signpost.png" width="50%" alt="Features" >
+        <h4>Features</h4>
+      </a>
+    </div>
+    <div class="w3-col l4  m4 s12" >
+      <a href="\gallery">
+        <img src="/assets/image-gallery.png" width="50%" alt="Photos" >
+        <h4>Photos</h4>
+      </a>
+    </div>
+    <div class="w3-col l4  m4 s12" >
+      <a href="\map">
+        <img src="/assets/map.png" width="50%" alt="Location" >
+        <h4>Location</h4>
+      </a>
+    </div>
+
+  </div>
+
+
+  <!-- End Page Content -->
+</div>
+<!-- Footer -->
+<div class="grey w3-padding-16 "></div>
+
+<footer class="w3-display-container  w3-center  w3-xlarge">
+  <img src="assets/pepperwineLogo.png" class="w3-left w3-hide-small w3-padding " style="width: 150px;object-fit:cover">
+  <img src="assets/pepperwineLogo.png" class="w3-right w3-hide-small w3-padding "
+       style="width: 150px;object-fit:cover;opacity: 0%">
+
+
+  <div class="w3-opacity  w3-center">
+    <i class="fa fa-facebook-official w3-padding w3-hover-opacity"></i>
+    <i class="fa fa-yelp w3-padding w3-hover-opacity"></i>
+    <i class="fa fa-phone w3-padding w3-hover-opacity"></i>
+    <i class="fa fa-envelope w3-padding w3-hover-opacity"></i>
+  </div>
+
+
+  <p class="w3-small w3-display-bottom-middle w3-center">Built by <a href="https://www.clintboyett.com/"
+                                                                     target="_blank">Clint Boyett</a></p>
+
+</footer>
+
+<script>
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="Experience the best RV park near Jacksonville, Texas - Pepperwine RV Park offers scenic hiking trails, fishing lake, and more. Explore our amenities and rates.">
+  <meta name="keywords" content="RV Parks, Jacksonville Texas, RV Park Jacksonville TX, Pepperwine RV Park, Home">
+  <meta name="author" content="Clint Boyett">
+  <title>Pepperwine RV Park Home- Best RV Park near Jacksonville, Texas</title>
+  <style>
+    .google-maps {
+      position: relative;
+      height: 0;
+      padding-bottom: 75% ;
+      overflow: hidden;
+      /*max-height: 850px !important;*/
+    }
+    .price {
+      list-style-type: none;
+      border: 1px solid #eee;
+      margin: 0;
+      padding: 0;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+    .price:hover {
+      box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    }
+
+    .price .header {
+      background-color: #212020;
+      color: white;
+      font-size: 25px;
+    }
+
+    .price li {
+      border-bottom: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .price .lightBlack {
+      background-color: #eee;
+      font-size: 20px;
+    }
+    .columns {
+      float: left;
+      width: 33.3%;
+      padding: 8px;
+    }
+    .google-maps iframe {
+      position: absolute;
+      top: 0;
+
+      width: 100% !important;
+      height: 100% !important;
+      /*max-height: 850px !important;*/
+    }
+
+
+
+    /* Reset some default styles */
+    body, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Styling for the directions container */
+    .directions {
+      font-family: Arial, sans-serif;
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    /* Styling for the list items */
+    .directions li {
+      list-style: none;
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    /* Icon styles */
+    .directions li i {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 20px;
+      margin-right: 5px;
+    }
+
+    /* Styling for different directions */
+    .from-jacksonville {
+      color: #000000;
+    }
+
+    .from-rusk {
+      color: #000000;
+    }
+  </style>
+</head>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar grey w3-card">
+    <button class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+            (click)="toggleMobileMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars w3-text-white"></i>
+    </button>
+    <a href="/home" class="w3-bar-item headerText  w3-text-white w3-button w3-padding-large w3-hide-small">HOME</a>
+    <a href="/amenities"
+       class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">AMENITIES</a>
+    <a href="/gallery" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">GALLERY</a>
+    <a href="/rates" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">RATES</a>
+    <a href="/map" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">MAP &
+      DIRECTIONS</a>
+    <a href="/contact" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">CONTACT</a>
+  </div>
+</div>
+
+<div *ngIf="hideMobileMenu" id="navDemo" class="w3-bar-block grey w3-hide-large w3-hide-medium w3-top"
+     style="margin-top:46px">
+  <a href="/home" class="w3-bar-item w3-button headerText  w3-text-white w3-button w3-padding-large">HOME</a>
+  <a href="/amenities" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">AMENITIES</a>
+  <a href="/gallery" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">GALLERY</a>
+  <a href="/rates" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">RATES</a>
+  <a href="/map" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">MAP & DIRECTIONS</a>
+  <a href="/contact" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">CONTACT</a>
+</div>
+
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Image and Name -->
+  <div class="grey">
+    <div class=" w3-display-container  w3-center">
+      <img src="assets/CameraHiking4.jpg" style="object-fit:cover;width:100%;max-height: 600px">
+
+
+    </div>
+  </div>
+  <div class=" w3-padding-16 grey" id=""></div>
+  <div class="directions">
+    <div class="from-jacksonville ">
+      <ul>
+        <li><i class="fa fa-map-marker"></i> From Jacksonville</li>
+        <li><i class="fa fa-road"></i> Starting at the intersection of Jacksonville Loop 456 and Highway 69, head south on Highway 69 for 1.9 miles.</li>
+        <li><i class="fa fa-undo"></i> Make a U-turn and travel north on Highway 69 for 700 feet.</li>
+        <li><i class="fa fa-arrow-right"></i> Take the first right turn, and you've reached your destination.</li>
+      </ul>
+    </div>
+
+    <div class="w3-margin grey" style="width: 100%;height: 5px"></div>
+    <div class="from-rusk">
+      <ul>
+        <li><i class="fa fa-map-marker"></i> From Rusk</li>
+        <li><i class="fa fa-road"></i> From the intersection of Highway 84 and Highway 69 in Rusk, Texas, travel north on Highway 69 for 9.4 miles.</li>
+        <li><i class="fa fa-arrow-right"></i> Turn right, and you'll arrive at your destination.</li>
+      </ul>
+    </div>
+  </div>
+  <div class=" w3-padding-16 grey" id="test"></div>
+
+
+    <div class="google-maps " id="mapDiv">
+      <iframe
+        id="iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3386.8274178485585!2d-95.23109832437271!3d31.911286174037297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86483d67c619e875%3A0xffd2768bc585cf91!2sPepperwine%20RV%20Park!5e0!3m2!1sen!2sus!4v1692726638187!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        class="grey"
+        style="border:0;"
+        allowfullscreen="true"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+
+      </iframe>
+      <!--  <div class="grey w3-padding-16 "></div>-->
+      <!--  <div class="my-google-map">-->
+      <!--    <google-map height="100%" width="100%">-->
+
+      <!--      <map-marker [position]="myLatLng"></map-marker>-->
+
+      <!--    </google-map>-->
+
+
+      <!--  </div>-->
+      <!--    <div class="grey w3-padding-16 " style="padding-top: 75%"></div>-->
+
+      <!--    <footer class="w3-display-container  w3-center  w3-xlarge">-->
+      <!--      <img src="assets/pepperwineLogo.png" class="w3-left w3-hide-small w3-padding " style="width: 150px;object-fit:cover">-->
+      <!--      <img src="assets/pepperwineLogo.png" class="w3-right w3-hide-small w3-padding " style="width: 150px;object-fit:cover;opacity: 0%">-->
+      <!--      &lt;!&ndash;  <img src="assets/pepperwineLogo.png" class="w3-left w3-hide-large w3-padding w3-hide-medium" style="width: 130px">&ndash;&gt;-->
+
+      <!--      <div class="w3-opacity  w3-center" >-->
+      <!--        <i class="fa fa-facebook-official w3-padding w3-hover-opacity"></i>-->
+      <!--        <i class="fa fa-yelp w3-padding w3-hover-opacity"></i>-->
+      <!--        <i class="fa fa-phone w3-padding w3-hover-opacity"></i>-->
+      <!--        <i class="fa fa-envelope w3-padding w3-hover-opacity"></i>-->
+      <!--      </div>-->
+
+
+      <!--      <p class="w3-small w3-display-bottom-middle w3-center">Built by <a href="https://www.clintboyett.com/" target="_blank">Clint Boyett</a></p>-->
+
+      <!--    </footer>-->
+
+    </div>
+  </div>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="Experience the best RV park near Jacksonville, Texas - Pepperwine RV Park offers scenic hiking trails, fishing lake, and more. Explore our amenities and rates.">
+  <meta name="keywords" content="RV Parks, Jacksonville Texas, RV Park Jacksonville TX, Pepperwine RV Park, Home">
+  <meta name="author" content="Clint Boyett">
+  <title>Pepperwine RV Park Home- Best RV Park near Jacksonville, Texas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .columns {
+      float: left;
+      width: 33.3%;
+      padding: 8px;
+    }
+
+    .price {
+      list-style-type: none;
+      border: 1px solid #eee;
+      margin: 0;
+      padding: 0;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+    .price:hover {
+      box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    }
+
+    .price .header {
+      background-color: #212020;
+      color: white;
+      font-size: 25px;
+    }
+
+    .price li {
+      border-bottom: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .price .lightBlack {
+      background-color: #eee;
+      font-size: 20px;
+    }
+
+    .button {
+      background-color: #04AA6D;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .columns {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar grey w3-card">
+    <button class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+            (click)="toggleMobileMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars w3-text-white"></i>
+    </button>
+    <a href="/home" class="w3-bar-item headerText  w3-text-white w3-button w3-padding-large w3-hide-small">HOME</a>
+    <a href="/amenities"
+       class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">AMENITIES</a>
+    <a href="/gallery" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">GALLERY</a>
+    <a href="/rates" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">RATES</a>
+    <a href="/map" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">MAP &
+      DIRECTIONS</a>
+    <a href="/contact" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">CONTACT</a>
+  </div>
+</div>
+
+<div *ngIf="hideMobileMenu" id="navDemo" class="w3-bar-block grey w3-hide-large w3-hide-medium w3-top"
+     style="margin-top:46px">
+  <a href="/home" class="w3-bar-item w3-button headerText  w3-text-white w3-button w3-padding-large">HOME</a>
+  <a href="/amenities" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">AMENITIES</a>
+  <a href="/gallery" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">GALLERY</a>
+  <a href="/rates" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">RATES</a>
+  <a href="/map" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">MAP & DIRECTIONS</a>
+  <a href="/contact" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">CONTACT</a>
+</div>
+
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Image and Name -->
+  <div class="grey">
+    <div class=" w3-display-container  w3-center">
+      <img src="assets/2023-08-05.jpg" style="object-fit:cover;width:100%;max-height: 600px">
+
+
+    </div>
+  </div>
+
+  <div class="grey w3-padding-16 ">
+  </div>
+
+
+<div>
+
+
+  <div class="columns">
+    <ul class="price">
+      <li class="header">Monthly Rate</li>
+      <li class="lightBlack">$395-$425</li>
+      <li>12ft x 75ft or 12ft x 65ft concrete site</li>
+      <li>10ft x 10ft concrete patio </li>
+      <li>$100 deposit required (refundable)</li>
+      <li>Includes: water, trash, & sewer</li>
+      <li>Customer pays electricity</li>
+      <li>Monthly payment required in advance upon arrival</li>
+      <li>Site Service Agreement required</li>
+      <li class="lightBlack"><a href="tel:9037219979" class="button">Call Now</a></li>
+    </ul>
+  </div>
+
+  <div class="columns">
+    <ul class="price">
+      <li class="header">Weekly Rate</li>
+      <li class="lightBlack">$180</li>
+      <li>12ft x 75ft or 12ft x 65ft concrete site</li>
+      <li>10ft x 10ft concrete patio </li>
+      <li>$100 deposit required (refundable)</li>
+      <li>Includes: water, trash, & sewer</li>
+      <li>Customer pays electricity</li>
+      <li>Weekly payment required in advance upon arrival</li>
+      <li>Site Service Agreement required</li>
+      <li class="lightBlack"><a href="tel:9037219979" class="button">Call Now</a></li>
+    </ul>
+  </div>
+
+  <div class="columns">
+    <ul class="price">
+      <li class="header">Daily Rate</li>
+      <li class="lightBlack">$40</li>
+      <li>12ft x 75ft or 12ft x 65ft concrete site</li>
+      <li>10ft x 10ft concrete patio </li>
+      <li>No deposit required!<div class="w3-hide-large w3-hide-small"><br/></div></li>
+      <li>Includes: water, trash, & sewer</li>
+      <li>Electricity included in the price</li>
+      <li>Daily payment required in advance upon arrival</li>
+      <li>Site Service Agreement required</li>
+      <li class="lightBlack "><a href="tel:9037219979" class="button">Call Now</a></li>
+    </ul>
+  </div>
+</div>
+  <br>
+  <div class="w3-container "style="width: 100%;margin: 0;padding: 0;" >
+    <div class="grey w3-padding" style="width: 100%">
+      <h4 class="w3-center grey w3-text-white">*PRICING IS BASED ON 2 GUESTS AND 2 VEHICLES</h4>
+    </div>
+
+  </div>
+
+
+<!--  <div class="grey w3-padding-16 "></div>-->
+  <div class="w3-row">
+    <footer class="w3-display-container  w3-center  w3-xlarge">
+      <img src="assets/pepperwineLogo.png" class="w3-left w3-hide-small w3-padding " style="width: 150px;object-fit:cover">
+      <img src="assets/pepperwineLogo.png" class="w3-right w3-hide-small w3-padding " style="width: 150px;object-fit:cover;opacity: 0%">
+      <!--  <img src="assets/pepperwineLogo.png" class="w3-left w3-hide-large w3-padding w3-hide-medium" style="width: 130px">-->
+
+      <div class="w3-opacity  w3-center" >
+        <i class="fa fa-facebook-official w3-padding w3-hover-opacity"></i>
+        <i class="fa fa-yelp w3-padding w3-hover-opacity"></i>
+        <i class="fa fa-phone w3-padding w3-hover-opacity"></i>
+        <i class="fa fa-envelope w3-padding w3-hover-opacity"></i>
+      </div>
+
+
+      <p class="w3-small w3-display-bottom-middle w3-center">Built by <a href="https://www.clintboyett.com/" target="_blank">Clint Boyett</a></p>
+
+    </footer>
+  </div>
+</div>
+</body>
+</html>

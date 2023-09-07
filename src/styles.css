@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/*@import '../node_modules/@syncfusion/ej2-base/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';*/
+
+/*@import '../node_modules/@syncfusion/ej2-base/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';*/
+
+/*@import '../node_modules/@syncfusion/ej2-base/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-icons/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';*/
+
+/*@import '../node_modules/@syncfusion/ej2-base/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';*/
+
+/*@import '../node_modules/@syncfusion/ej2-base/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';*/
+/*@import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';*/
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.grey{
+  background-color: #212020;
+}
+.headerText{
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 300;
+  font-size: 13pt;
+
+  list-style: none;
+  float: left;
+  line-height: 30px;
+}
+.bannerText{
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  margin: 0 auto;
+
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  font-size: 14pt;
+  list-style: none;
+  line-height: 30px;
+}
+.otherText{
+  font-family: 'Ledger',serif;
+  color: #212020;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 20px;
+  letter-spacing: 0;
+  margin-top: 0;
+  margin-right: 60px;
+  margin-bottom: 0;
+}

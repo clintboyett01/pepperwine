@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "pepperwine"
+  },
+  "targets": {
+    "pepperwine": {
+      "hosting": {
+        "pepperwine": [
+          "pepperwine"
+        ]
+      }
+    }
+  }
+}

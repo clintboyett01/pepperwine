@@ -1,0 +1,160 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="Experience the best RV park near Jacksonville, Texas - Pepperwine RV Park offers scenic hiking trails, fishing lake, and more. Explore our amenities and rates.">
+  <meta name="keywords" content="RV Parks, Jacksonville Texas, RV Park Jacksonville TX, Pepperwine RV Park, Home">
+  <meta name="author" content="Clint Boyett">
+  <title>Pepperwine RV Park Amenities- Best RV Park near Jacksonville, Texas</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar grey w3-card">
+    <button class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+            (click)="toggleMobileMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars w3-text-white"></i>
+    </button>
+    <a href="/home" class="w3-bar-item headerText  w3-text-white w3-button w3-padding-large w3-hide-small">HOME</a>
+    <a href="/amenities"
+       class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">AMENITIES</a>
+    <a href="/gallery" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">GALLERY</a>
+    <a href="/rates" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">RATES</a>
+    <a href="/map" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">MAP &
+      DIRECTIONS</a>
+    <a href="/contact" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">CONTACT</a>
+  </div>
+</div>
+
+<div *ngIf="hideMobileMenu" id="navDemo" class="w3-bar-block grey w3-hide-large w3-hide-medium w3-top"
+     style="margin-top:46px">
+  <a href="/home" class="w3-bar-item w3-button headerText  w3-text-white w3-button w3-padding-large">HOME</a>
+  <a href="/amenities" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">AMENITIES</a>
+  <a href="/gallery" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">GALLERY</a>
+  <a href="/rates" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">RATES</a>
+  <a href="/map" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">MAP & DIRECTIONS</a>
+  <a href="/contact" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">CONTACT</a>
+</div>
+<!--make a new div-->
+<!-- Header -->
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Image -->
+  <div class="">
+    <div class=" w3-display-container  w3-center">
+      <img src="assets/Arial2.jpg" style="object-fit:cover;width:100%;max-height: 600px">
+
+    </div>
+
+
+    <div class="grey w3-padding-16 "></div>
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16  w3-center" id="food">
+
+    <div class="w3-col l2 m4 s12" >
+      <img src="/assets/dumpster.png" alt="Sandwich" style="width:60%">
+      <h3>On-Site Garbage Dumpster</h3>
+    </div>
+
+    <div class="w3-col l2 m4 s12" >
+      <img src="/assets/trailer.png" alt="Steak" style="width:60%">
+      <h3>Concrete pull-thru pads- 12ftx75ft</h3>
+    </div>
+
+    <div class="w3-col l2 m4 s12" >
+      <img src="/assets/caravan.png" alt="Cherries" style="width:60%">
+      <h3>Concrete back-in pads- 12ftx60ft</h3>
+    </div>
+
+    <div class="w3-col l2 m4 s12" >
+      <img src="/assets/outdoor-table.png" alt="Pasta and Wine" style="width:60%">
+      <h3>Concrete Patios- 10ft x 10ft (picnic tables available)</h3>
+    </div>
+
+    <div class="w3-col l2 m4 s12" >
+      <img src="/assets/flash.png" alt="Sandwich" style="width:60%">
+      <h3>Full Electric Hookup - 30-amp or 50-amp.</h3>
+    </div>
+    <div class="w3-col l2 m4 s12" >
+      <img src="/assets/tap.png" alt="Steak" style="width:60%">
+      <h3>Full Water and Sewer Hookup.</h3>
+    </div>
+
+  </div>
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="activities">
+      <div class="w3-col l2 m4 s12">
+        <img src="/assets/hiking.png" alt="Hiking" style="width:60%">
+        <h3>Hiking Trails - 4 scenic hiking trails</h3>
+      </div>
+      <div class="w3-col l2 m4 s12">
+        <img src="/assets/fishing.png" alt="Fishing" style="width:60%">
+        <h3>Fishing Lake - 5 acre catch and release</h3>
+      </div>
+      <div class="w3-col l2 m4 s12">
+        <img src="/assets/kayak.png" alt="Kayaking" style="width:60%">
+        <h3>Kayaks - available per request</h3>
+      </div>
+      <div class="w3-col l2 m4 s12">
+        <img src="/assets/nature.png" alt="Nature" style="width:60%">
+        <h3>Quiet, Peaceful, and Remotely Located</h3>
+      </div>
+      <div class="w3-col l2 m4 s12">
+        <img src="/assets/track.png" alt="Pet Friendly" style="width:60%">
+        <h3>Pet Friendly! Lots of roaming areas!</h3>
+      </div>
+      <div class="w3-col l2 m4 s12">
+        <img src="/assets/1000_F_504128726_5J29MiGKJgmERouQOffsEKDGEhsC8NMG.jpg" alt="Family-Owned" style="width:60%">
+        <h3>Family-Owned and Family-Operated.</h3>
+      </div>
+    </div>
+
+    <!-- Third Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="maintenance">
+      <div class="w3-col l2 m4 s12">
+        <img src="/assets/mowing.png" alt="Mowing" style="width:60%">
+        <h3>All Spaces Mowed and Maintained.</h3>
+      </div>
+    </div>
+
+    <!-- Divider-->
+    <div class="grey w3-text-white">
+      <h4 class="w3-wide grey w3-padding-16 w3-center"><b>Coming Soon!</b></h4>
+    </div>
+
+    <!-- Coming Soon Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-col l2 m4 s12">
+        <img src="/assets/washer.png" alt="Onsite Laundry" style="width:60%">
+        <h3>Onsite Laundry Room with Coin-Operated Machines.</h3>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="grey w3-padding-16 "></div>
+
+    <footer class="w3-display-container  w3-center  w3-xlarge">
+      <img src="assets/pepperwineLogo.png" class="w3-left w3-hide-small w3-padding " style="width: 150px;object-fit:cover">
+      <img src="assets/pepperwineLogo.png" class="w3-right w3-hide-small w3-padding "
+           style="width: 150px;object-fit:cover;opacity: 0%">
+
+
+      <div class="w3-opacity  w3-center">
+        <i class="fa fa-facebook-official w3-padding w3-hover-opacity"></i>
+        <i class="fa fa-yelp w3-padding w3-hover-opacity"></i>
+        <i class="fa fa-phone w3-padding w3-hover-opacity"></i>
+        <i class="fa fa-envelope w3-padding w3-hover-opacity"></i>
+      </div>
+
+
+      <p class="w3-small w3-display-bottom-middle w3-center">Built by <a href="https://www.clintboyett.com/"
+                                                                         target="_blank">Clint Boyett</a></p>
+
+    </footer>
+
+</div>
+</div>
+</body>

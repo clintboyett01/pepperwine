@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="Experience the best RV park near Jacksonville, Texas - Pepperwine RV Park offers scenic hiking trails, fishing lake, and more. Explore our amenities and rates.">
+  <meta name="keywords" content="RV Parks, Jacksonville Texas, RV Park Jacksonville TX, Pepperwine RV Park, Home">
+  <meta name="author" content="Clint Boyett">
+  <title>Pepperwine RV Park Home- Best RV Park near Jacksonville, Texas</title>
+  <style>
+
+    img {margin-bottom: -7px}
+    .w3-row-padding img {margin-bottom: 12px}
+  </style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar grey w3-card">
+    <button class="w3-bar-item w3-button grey w3-padding-large w3-hide-medium w3-hide-large w3-right"
+            (click)="toggleMobileMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars w3-text-white"></i>
+    </button>
+    <a href="/home" class="w3-bar-item headerText  w3-text-white w3-button w3-padding-large w3-hide-small">HOME</a>
+    <a href="/amenities"
+       class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">AMENITIES</a>
+    <a href="/gallery" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">GALLERY</a>
+    <a href="/rates" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">RATES</a>
+    <a href="/map" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">MAP &
+      DIRECTIONS</a>
+    <a href="/contact" class="w3-bar-item headerText w3-text-white w3-button w3-padding-large w3-hide-small">CONTACT</a>
+  </div>
+</div>
+
+<div *ngIf="hideMobileMenu" id="navDemo" class="w3-bar-block grey w3-hide-large w3-hide-medium w3-top"
+     style="margin-top:46px">
+  <a href="/home" class="w3-bar-item w3-button headerText  w3-text-white w3-button w3-padding-large">HOME</a>
+  <a href="/amenities" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">AMENITIES</a>
+  <a href="/gallery" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">GALLERY</a>
+  <a href="/rates" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">RATES</a>
+  <a href="/map" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">MAP & DIRECTIONS</a>
+  <a href="/contact" class="w3-bar-item w3-button headerText w3-text-white w3-button w3-padding-large ">CONTACT</a>
+</div>
+
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Image and Name -->
+  <div class="grey">
+    <div class=" w3-display-container  w3-center">
+      <img loading="eager" src="assets/amenities.png" style="object-fit:cover;width:100%;max-height: 600px">
+
+    </div>
+  </div>
+
+  <div class="grey w3-padding-16 ">
+  </div>
+</div>
+
+<div class="w3-content" style="max-width:1500px">
+
+
+
+  <!-- Photo Grid -->
+  <div class="w3-row grey" id="myGrid" style="padding-bottom: 128px">
+    <div class="w3-third">
+      <img loading="eager" src="/assets/gallery/Arial4.jpg" style="width:100%">
+      <img loading="eager" src="/assets/gallery/CameraHiking2.jpg" style="width:100%">
+      <img loading="lazy" src="/assets/gallery/CameraPond1.jpg" style="width:100%">
+      <img loading="lazy" src="/assets/gallery/PondArial1.jpg" style="width:100%">
+
+      <img loading="eager" src="/assets/gallery/CameraHiking1.jpg" style="width:100%">
+      <img loading="lazy" src="/assets/gallery/PondFrontC.jpg" style="width:100%">
+      <img loading="lazy" src="/assets/gallery/2023-07-20.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-third">
+      <img loading="eager" src="/assets/gallery/CameraHiking3.jpg" style="width:100%">
+      <img loading="lazy" src="/assets/gallery/CameraHiking4.5.jpg" style="width:100%">
+
+      <img loading="lazy" src="/assets/gallery/Arial2.jpg" style="width:100%">
+      <img loading="lazy" src="/assets/gallery/CameraHiking1.5.jpg" style="width:100%">
+
+      <img loading="lazy" src="/assets/gallery/CameraSpot1.jpg" style="width:100%">
+      <img loading="lazy" src="/assets/gallery/2023-01-15.jpg" style="width:100%">
+      <img loading="lazy" src="/assets/gallery/2023-08-05.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-third">
+      <img loading="lazy" src="/assets/gallery/CameraSpot2.jpg" style="width:100%">
+      <img loading="lazy" src="/assets/gallery/CameraSpot3.jpg" style="width:100%">
+      <img loading="lazy" src="/assets/gallery/2023-06-15%20(1).jpg" style="width:100%">
+      <img loading="lazy" src="/assets/gallery/PondArial2.jpg" style="width:100%">
+
+      <img loading="lazy" src="/assets/gallery/PondSide.jpg" style="width:100%">
+
+      <img loading="lazy" src="/assets/gallery/2022-08-31.jpg" style="width:100%">
+      <img loading="lazy" src="/assets/gallery/CameraHiking4.jpg" style="width:100%">
+    </div>
+  </div>
+
+
+  <!-- End Page Content -->
+</div>
+<div class="grey w3-padding-16 "></div>
+<div class="w3-row">
+  <footer class="w3-display-container  w3-center  w3-xlarge">
+    <img loading="lazy" src="assets/pepperwineLogo.png" class="w3-left w3-hide-small w3-padding " style="width: 150px;object-fit:cover">
+    <img loading="lazy" src="assets/pepperwineLogo.png" class="w3-right w3-hide-small w3-padding " style="width: 150px;object-fit:cover;opacity: 0%">
+    <!--  <img loading="lazy" src="assets/pepperwineLogo.png" class="w3-left w3-hide-large w3-padding w3-hide-medium" style="width: 130px">-->
+
+    <div class="w3-opacity  w3-center" >
+      <i class="fa fa-facebook-official w3-padding w3-hover-opacity"></i>
+      <i class="fa fa-yelp w3-padding w3-hover-opacity"></i>
+      <i class="fa fa-phone w3-padding w3-hover-opacity"></i>
+      <i class="fa fa-envelope w3-padding w3-hover-opacity"></i>
+    </div>
+
+
+    <p class="w3-medium w3-display-bottom-middle w3-center">Made by <a href="https://www.clintboyett.com/" target="_blank">Clint Boyett</a></p>
+
+  </footer>
+</div>
+
+<script>
+  // Toggle grid padding
+  function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+      x.className = "w3-row-padding";
+    } else {
+      x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+  }
+
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+</script>
+
+</body>
+</html>

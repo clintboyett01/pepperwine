@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /app/
+Disallow: /main.server.ts
+Disallow: /main.ts
+Disallow: /typings.d.ts
+
+# Allow search engines to access sitemaps
+Sitemap: https://pepperwinervpark.org/sitemap.xml
+
+# Allow everything else
+Allow: /
