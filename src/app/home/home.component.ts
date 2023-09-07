@@ -36,24 +36,4 @@ export class HomeComponent {
   }
   constructor(private _router: Router,private title: Title, private meta: Meta) { }
 
-  // onSubmit() {
-  //   //console.log(this.rteObj)
-  //   let body: string = ""//this.rteObj.getHtml();
-  //
-  //   console.log(body)
-  //   Email.send({
-  //     Host: 'smtp.elasticemail.com',
-  //     Username: '3dmapprints@gmail.com',
-  //     Password: '5085207CCDE40E2E1B1E3A3D9DF8245293F8',
-  //     To: '3dmapprints@gmail.com',
-  //     From: '3dmapprints@gmail.com',
-  //     Subject: 'Someone Contacted You!',
-  //     Body:
-  //       'Email : ' + this.emailText + '\n' +
-  //       'Name : ' + this.nameText + '\n' +
-  //       'Message : ' + this.messagesText
-  //   }).then(
-  //     this._router.navigateByUrl('/thank-you')
-  //   );
-  // }
 }
